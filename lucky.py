@@ -12,7 +12,7 @@ res.raise_for_status()
 soup = bs4.BeautifulSoup(res.text, features="html.parser")
 
 # Open a browser tab for each result.
-linkElems = soup.select('.wLL07_0Xnd1QZpzpfR4W a')
+linkElems = soup.select('.wLL07_0Xnd1QZpzpds44W a')
 print(linkElems)
 numOpen = min(5, len(linkElems))
 for i in range(numOpen):
